@@ -119,7 +119,7 @@ fi
 if ! pveversion | grep -Eq "pve-manager/8\.[0-4](\.[0-9]+)*"; then
   header_info
   msg_error "This version of Proxmox Virtual Environment is not supported"
-  echo -e "  PVE Version 8.4-16 or higher is required."
+  echo -e "  PVE Version 8.4 or higher is required."
   echo -e "\nExiting..."
   sleep 3
   exit
