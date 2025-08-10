@@ -62,13 +62,13 @@ deb http://download.proxmox.com/debian/pve trixie pve-no-subscription
 EOF
     msg_ok "Enabled 'pve-no-subscription' repository"
 
-  whiptail --backtitle "Proxmox VE Upgrade" --msgbox --title "PVE9 CEPH PACKAGE REPOSITORIES" "The 'Ceph Package Repositories' provides access to both the 'no-subscription' and 'enterprise' repositories." 10 58
-    msg_info "Enabling 'ceph package repositories'"
-    cat <<EOF >/etc/apt/sources.list.d/ceph.list
+#  whiptail --backtitle "Proxmox VE Upgrade" --msgbox --title "PVE9 CEPH PACKAGE REPOSITORIES" "The 'Ceph Package Repositories' provides access to both the 'no-subscription' and 'enterprise' repositories." 10 58
+#    msg_info "Enabling 'ceph package repositories'"
+#    cat <<EOF >/etc/apt/sources.list.d/ceph.list
 # deb https://enterprise.proxmox.com/debian/ceph-quincy trixie enterprise
 # deb http://download.proxmox.com/debian/ceph-quincy trixie no-subscription
-EOF
-    msg_ok "Enabled 'ceph package repositories'"
+#EOF
+#    msg_ok "Enabled 'ceph package repositories'"
 
   whiptail --backtitle "Proxmox VE Upgrade" --msgbox --title "PVE9 TEST" "The 'pvetest' repository can give advanced users access to new features and updates before they are officially released (Disabled)." 10 58
     msg_info "Adding 'pvetest' repository and set disabled"
