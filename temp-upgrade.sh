@@ -66,7 +66,7 @@ EOF
     msg_info "Enabling 'ceph package repositories'"
     cat <<EOF >/etc/apt/sources.list.d/ceph.list
 # deb https://enterprise.proxmox.com/debian/ceph-quincy trixie enterprise
-deb http://download.proxmox.com/debian/ceph-quincy trixie no-subscription
+# deb http://download.proxmox.com/debian/ceph-quincy trixie no-subscription
 EOF
     msg_ok "Enabled 'ceph package repositories'"
 
